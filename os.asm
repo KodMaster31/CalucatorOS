@@ -76,7 +76,7 @@ calc:
     cmp byte [state], 3
     jne main
 
-    call nl          ; ⬅️ ENTER sonrası alt satır
+    call nl          ;  ENTER sonrası alt satır
 
     mov al, [a]
     mov bl, [b]
@@ -157,4 +157,5 @@ state db 0
 
 times 510-($-$$) db 0
 dw 0xAA55
+
 
