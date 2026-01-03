@@ -99,7 +99,7 @@ negative:
 
 show:
     call print_number
-    call nl          ; ⬅️ sonuçtan sonra alt satır
+    call nl          ;  sonuçtan sonra alt satır
 
     mov si, prompt
     call print
@@ -157,3 +157,4 @@ state db 0
 
 times 510-($-$$) db 0
 dw 0xAA55
+
