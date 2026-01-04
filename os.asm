@@ -106,7 +106,7 @@ show:
     mov byte [state], 0
     jmp main
 
-; -------- SAYI YAZDIRMA (0–99) --------
+
 print_number:
     xor ah, ah
     mov bl, 10
@@ -123,7 +123,7 @@ print_number:
     call echo
     ret
 
-; -------- IO --------
+
 echo:
     mov ah, 0x0E
     mov bh, 0
@@ -157,5 +157,6 @@ state db 0
 
 times 510-($-$$) db 0
 dw 0xAA55
+
 
 
